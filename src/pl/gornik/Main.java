@@ -3,6 +3,7 @@ package pl.gornik;
 import pl.gornik.ex.IllegalNumberException;
 import pl.gornik.ex.IllegalValueException;
 import pl.gornik.persons.Person;
+import pl.gornik.persons.User;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,5 +16,7 @@ public class Main {
 //            System.err.println("Bład podanej liczby: " + e.getMessage());
 //        }
 
+        User user = new User("Jan","Kowalski",21,"12345678901","JanKowalski@wp.pl","eDekoee1","111333222");
+        user.showInfo();
     }
 }
